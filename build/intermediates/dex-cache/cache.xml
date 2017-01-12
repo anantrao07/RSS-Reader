@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="e3ff40b81b484c97ab84832b1822ba18f8fad65d">
+        sha1="bd019eadaccb5e071122362d8824edb8304b99d6">
         <dex dex="/Users/anant/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_90710881cf198759f4bfd621329867ffc27d0cdc/classes.dex" />
     </item>
     <item
@@ -196,7 +196,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="4832fac4274b2ac117b122914d7924c142aa5b4d">
+        sha1="2e96df719541b1dbc0390a4662853f912a729fb6">
         <dex dex="/Users/anant/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_60109f78097bb6af7574fdf657fdc17ad579ec76/classes.dex" />
     </item>
     <item

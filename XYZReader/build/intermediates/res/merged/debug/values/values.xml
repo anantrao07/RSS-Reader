@@ -531,6 +531,7 @@
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
+    <dimen name="resting_fab_elevation">6dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item format="float" name="detail_body_line_spacing_multiplier" type="fraction">1.25</item>
     <item name="action_bar_activity_content" type="id"/>

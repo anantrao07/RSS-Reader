@@ -23,7 +23,7 @@
         <ImageButton
 
             android:id="@+id/action_up"
-           
+            android:padding="16dp"
             android:layout_gravity="top"
             android:layout_width="56dp"
             android:layout_height="?actionBarSize"
