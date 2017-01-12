@@ -11,7 +11,7 @@ import android.view.View;
  * Created by anant on 2016-12-26.
  */
 
-public class FabAnimation extends FloatingActionButton.Behavior {
+public class FabAnimation extends CoordinatorLayout.Behavior<FloatingActionButton> {
 
     public FabAnimation(Context context , AttributeSet attr) {
         super();

@@ -1,5 +1,6 @@
 package com.example.xyzreader.ui;
 
+import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.LoaderManager;
@@ -44,6 +45,7 @@ public class ArticleDetailActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
 
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
@@ -83,7 +85,7 @@ public class ArticleDetailActivity extends AppCompatActivity
 
 
         mUpButton = findViewById(R.id.action_up);
-       // mUpButton.setVisibility(View.GONE);
+
         mUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

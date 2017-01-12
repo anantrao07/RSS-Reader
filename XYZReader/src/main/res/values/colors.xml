@@ -30,9 +30,10 @@
     <color name="photo_placeholder">#000000</color>
 
     <color name="orange_300">#FFB74D</color>
-    <color name="orange_500">#FF7043</color>
-    <color name="orange_700">#BF360C</color>
-    <color name="lightgreenAccent">#FF3D00</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="blueAccent">#FF9100</color>
+    <color name = "articlepageheadline">#1976D2</color>
     <color name="tittletextcolor">#000000</color>
-    <color name="subtittletextcolor">#F57C00</color>
+    <color name="subtittletextcolor">#FF9100</color>
 </resources>

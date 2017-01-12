@@ -7,6 +7,7 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -14,7 +15,6 @@ import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.ShareCompat;
-import android.support.v4.widget.NestedScrollView;
 import android.support.v7.graphics.Palette;
 import android.text.Html;
 import android.text.format.DateUtils;
@@ -47,8 +47,8 @@ public class ArticleDetailFragment extends Fragment implements
     private long mItemId;
     private View mRootView;
     private int mMutedColor = 0xFF333333;
-   // private ObservableScrollView mScrollView;
-    private NestedScrollView mScrollView;
+    private ObservableScrollView mScrollView;
+
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private CollapsingToolbarLayout collapsingToolbar;
 
@@ -112,6 +112,7 @@ public class ArticleDetailFragment extends Fragment implements
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
+
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
 
 
@@ -121,19 +122,19 @@ public class ArticleDetailFragment extends Fragment implements
         //collapsingToolbar = (CollapsingToolbarLayout)mRootView.findViewById(R.id.collapsing_toolbar);
 
 
-       // mDrawInsetsFrameLayout = (DrawInsetsFrameLayout)
-         //       mRootView.findViewById(R.id.draw_insets_frame_layout);
-      //  mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
-        //    @Override
-         //   public void onInsetsChanged(Rect insets) {
-           //     mTopInset = insets.top;
-            //}
-        //});
+        mDrawInsetsFrameLayout = (DrawInsetsFrameLayout)
+                mRootView.findViewById(R.id.draw_insets_frame_layout);
+       mDrawInsetsFrameLayout.setOnInsetsCallback(new DrawInsetsFrameLayout.OnInsetsCallback() {
+            @Override
+            public void onInsetsChanged(Rect insets) {
+                mTopInset = insets.top;
+            }
+        });
         share_fab_btn = mRootView.findViewById(R.id.share_fab);
 
-       // mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
-        mScrollView = (NestedScrollView) mRootView.findViewById(R.id.scrollview);
-       /* mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
+        mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
+
+        mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
             @Override
             public void onScrollChanged() {
                 mScrollY = mScrollView.getScrollY();
@@ -141,7 +142,7 @@ public class ArticleDetailFragment extends Fragment implements
                 mPhotoContainerView.setTranslationY((int) (mScrollY - mScrollY / PARALLAX_FACTOR));
                 updateStatusBar();
             }
-        });*/
+        });
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
 
@@ -189,7 +190,7 @@ public class ArticleDetailFragment extends Fragment implements
                     (int) (Color.blue(mMutedColor) * 0.9));
         }
         mStatusBarColorDrawable.setColor(color);
-//        mDrawInsetsFrameLayout.setInsetBackground(mStatusBarColorDrawable);
+        mDrawInsetsFrameLayout.setInsetBackground(mStatusBarColorDrawable);
     }
 
     static float progress(float v, float min, float max) {
