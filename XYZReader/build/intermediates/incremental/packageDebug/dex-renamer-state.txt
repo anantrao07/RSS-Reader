@@ -1,7 +1,4 @@
-#Thu Jan 12 18:49:54 AST 2017
-base.0=/Users/anant/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_90710881cf198759f4bfd621329867ffc27d0cdc
-renamed.1=classes2.dex
+#Fri Sep 08 02:56:22 ADT 2017
+base.0=/Users/anant/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.1=/Users/anant/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_60109f78097bb6af7574fdf657fdc17ad579ec76/classes.dex
-base.1=/Users/anant/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_60109f78097bb6af7574fdf657fdc17ad579ec76
-file.0=/Users/anant/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_90710881cf198759f4bfd621329867ffc27d0cdc/classes.dex
+file.0=/Users/anant/Downloads/xyzreader/XYZReader/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
